@@ -3,16 +3,23 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <title>Test 3</title>
     <link href="WebFiles/css/font-awesome.min.css" rel="stylesheet" />
     <style>
-        .bgGray { background-color: #ddd; }
-        .yellow { background-color: #ffd800; border-radius: 50%; }
+        .bgGray {
+            background-color: #ddd;
+        }
+
+        .yellow {
+            background-color: #ffd800;
+            border-radius: 50%;
+        }
     </style>
 </head>
 <body>
     <div id="test" style="border: 1px solid blue; width: 75px;"></div>
-    <script>
+    <script language="JavaScript" type="text/javascript">
         var test = document.getElementById('test');
         for (i = 1; i <= 100; i++) {
             test.innerHTML += '<span class="bgGray">&nbsp;' + i + '&nbsp;</span>';
